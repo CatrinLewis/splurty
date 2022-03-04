@@ -31,12 +31,26 @@
         </div>
             
     </header>
-
     <hr />
-
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+        <%= yield %>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+                </div>
+                <div class="col-6 footer-blurb">
+                    Proudly hacked by Catrin
+                    Want to know where I sing? <a href="https://operaanywhere.com/">Visit Opera Anywhere here</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
   </body>
 </html>
